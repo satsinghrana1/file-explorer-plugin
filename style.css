@@ -1,0 +1,64 @@
+/***** FILE EXPLORER STYLING *****/
+*{
+	box-sizing: border-box;
+}
+body{
+	/*margin: 0;*/
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.fe_wrapper {
+    /*background: gainsboro;*/
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+.fe_result {
+    border-left: 1px dashed;
+    margin-left: 20px;
+}
+
+.single-file{
+    box-sizing: border-box;
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5px;
+    min-height: 30px;
+    position: relative;
+}
+.single-file.open {
+    color: #000
+}
+.single-file:hover {
+    background: rgba(0,0,0,0.08);
+    cursor: pointer;
+    color: #000
+}
+img.file_icon {
+    max-width: 30px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 16px;
+    left: 18px;
+}
+span.file_name {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+    left: 50px;
+}
+.single-file::before {
+    content: "----";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
